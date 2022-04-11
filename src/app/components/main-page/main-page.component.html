@@ -1,0 +1,92 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Collection</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches|Gotu|Old+Standard+TT|Roboto+Mono">
+</head>
+
+<body>
+    <h1 class='welcome'>Welcome!</h1>
+    <div class='alineInstructions'>
+        <div class='instructions'>
+            <a>Below you will find a list of integration tools and useful links. Some of them will need a Java version 11 to be installed on your machine. 
+    You may check if you have a Java by executing command </a><a id='CMD'>java -version</a><a> in Command Prompt. After that you may see next message: </a>
+            <a id='CMD'>'java' is not recognized as an internal or external command</a>
+            <a><br>It means Java needs to be installed. Click </a><a id='bold' role="button" class='clicable' (click)="getFile(3)">here</a>
+            <a> to install it automatically. If it will not work - google how to install JDK to your computer.</a>
+        </div>
+    </div>
+    <h1>Tools</h1>
+    <ngx-spinner color="#008B8B" type="ball-triangle-path"></ngx-spinner>
+    <table>
+        <thead>
+            <tr>
+                <th id='tool'>Tool</th>
+                <th id='description'>Description</th>
+                <th id='downloads'>Related downloads</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id='tool'><a class='clicable' href='https://ezugi-json-tests.herokuapp.com' target="_blank">JSON Test Tool</a></td>
+                <td id='description'>Tool allows to check operator's responses and error handling. Validation set is a flow-chart of tests and validations.</td>
+                <td id='downloads' rowspan="2"><a role="button" class='clicable' (click)="getFile(6)">JSON test recommended validations set</a></td>
+            </tr>
+            <tr>
+                <td id='tool'><a class='clicable' href='https://operators-json-ezugi.herokuapp.com' target="_blank">Operator's JSON</a></td>
+                <td id='description'>New tool made for API checks. May be used by operators. Validation set is also relevant for it.</td>
+            </tr>
+            <tr>
+                <td id='tool'><a class='clicable' href='https://ezugi-log-parser.herokuapp.com' target="_blank">Log Parser</a></td>
+                <td id='description'>Tool allows to parse the log and to get the list of Transaction IDs and Timestamps related to them or operators login information. You may want to download the local server for this tool for faster work.
+                </td>
+                <td id='downloads' rowspan="2"><a role="button" class='clicable' (click)="getFile(2)">Local server</a> </td>
+            </tr>
+            <tr>
+                <td id='tool'><a role="button" class='clicable' href='https://ezugi-bo-tool-set.herokuapp.com' target="_blank">Back Office Tool Set</a></td>
+                <td id='description'>Tools are allowing to restart integration tables automatically and to create new operators on the integration server. Run from your local machine. You need to download and run Local Server to use the tools.
+                </td>
+                <!-- <td id='downloads'><a role="button" class='clicable' (click)="getFile(2)">Local Server</a> </td> -->
+            </tr>
+            <tr>
+                <td id='tool'><a class='clicable' href='https://request-checker2000.herokuapp.com' target="_blank">Request Checker</a></td>
+                <td id='description'>Tool allows to check the requests outgoing from server. Also may be used for hash-related issues.</td>
+                <td id='downloads'>None</td>
+            </tr>
+            <tr>
+                <td id='tool'><a class='clicable' href='https://docs.google.com/spreadsheets/d/15S0Ix5HCa5BnvGoRQkxgshd4UyKBu3B_-JMN6s_hdqs/edit?usp=sharing' target="_blank">Easy Link Builder</a></td>
+                <td id='description'>Tool allows to create links for <a id='bold'>last 10</a> server add-on.</td>
+                <td id='downloads'>None</td>
+            </tr>
+            <tr>
+                <td id='tool'><a role="button" class='clicable' (click)="getFile(1)">Stress Test Pattern</a></td>
+                <td id='description'>Tool allows to calculate the results of stress test. Should be used together with <a id='bold'>Log Parser</a>.</td>
+                <td id='downloads'>None</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Useful Links</h1>
+    <table>
+        <thead>
+            <tr>
+                <th id='tool'>Link</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id='tool'>
+                    <a class='clicable' href='https://gist.github.com/Subuday77/255c4fdd3371e815212c04ecb583acc1' target="_blank">Multithread processing</a>
+                </td>
+                <td>Example of working with threads. Could help to the operator to solve issue with Timestamps</td>
+            </tr>
+            <tr>
+                <td id='tool'>
+                    <a class='clicable' href='https://gist.github.com/Subuday77/121487476923b5a48539d50a766b427f' target="_blank">Hash check</a>
+                </td>
+                <td>Example of hash check code. Could help to the operator to solve issues with invalid hash.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>

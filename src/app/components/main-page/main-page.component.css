@@ -1,0 +1,97 @@
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+.welcome {
+    font-family: 'Staatliches';
+    font-size: 500%;
+    -webkit-text-stroke: 2px white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.alineInstructions {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.instructions {
+    font-family: 'Old Standard TT';
+    /* font-weight: bold; */
+    font-size: larger;
+    background-color: darkcyan;
+    border-radius: 50px;
+    padding: 20px 20px 20px 20px;
+}
+
+#CMD {
+    background-color: black;
+    color: white;
+    padding: 2px 15px 4px 15px;
+    font-family: 'Roboto Mono';
+    font-size: smaller;
+}
+
+thead {
+    text-align: left;
+}
+
+tbody {
+    /* height: 170%; */
+    overflow-y: scroll;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+th {
+    font-size: larger;
+    font-family: 'Staatliches';
+    text-align: center;
+    background-color: darkcyan;
+}
+
+th,
+td {
+    border: 1px solid black;
+    max-width: 220px;
+    min-width: auto;
+    word-break: break-word;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#tool,
+#downloads {
+    max-width: 35px;
+    text-align: center;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+.clicable {
+    color: blue;
+    text-decoration: underline;
+}
+
+.clicable:visited {
+    color: blue;
+}
+
+.clicable:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.clicable:active {
+    color: red;
+}
